@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Grid.css">
+    <title>Example Grid</title>
+</head>
+<style>
+    body{
+        padding: 0;
+        margin: 0;
+    }
+
+    .container{
+        text-align: center;
+    }
+
+    .category{
+        background-color: green;
+        height: 260px;
+        margin-top: 16px;
+    }
+
+    .course-item{
+        background-color: blue;
+        height: 50px;
+        line-height: 50px;
+    }
+
+    .course-item2{
+        background-color: orange;
+        height: 260px;
+        line-height: 260px;
+        margin-top: 16px;
+    }
+
+    h1{
+        color: white;
+        margin: 0;
+    }
+
+    ul{
+        margin-top: 0;
+    }
+
+
+</style>
+<body>
+    <div class="grid wide container">
+        <!-- <div class="row l-0 m-0 s-0"> -->
+            <!-- 1 item chiếm 3 cột cơ sở trên PC => 4 item trên màn PC-->
+            <!-- 1 item chiếm 6 cột cơ sở trên Tablet => 2 item trên màn tablet-->
+            <!-- 1 item chiếm 12 cột cơ sở trên Mobile => 1 item trên màn mobile-->
+            <!-- <div class="col l-3 m-6 s-12">
+                <div class="course-item">
+                    <h1>Course 1</h1>
+                </div>
+            </div>
+            <div class="col l-3 m-6 s-12">
+                <div class="course-item">
+                    <h1>Course 2</h1>
+                </div>
+            </div>
+            <div class="col l-3 m-6 s-12">
+                <div class="course-item">
+                    <h1>Course 3</h1>
+                </div>
+            </div>
+            <div class="col l-3 m-6 s-12">
+                <div class="course-item">
+                    <h1>Course 4</h1>
+                </div>
+            </div> -->
+        <!-- </div> -->
+
+        <div class="row">
+            <div class="col l-3 m-0 s-0">
+                <div class="category">
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col l-9 m-12 s-12">
+                <div class="row">
+                    <div class="col l-4 m-6 s-12">
+                        <div class="course-item2">
+
+                            <h1>HTML</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <div class="course-item2">
+
+                            <h1>CSS</h1>
+                        </div>
+                    </div>
+                    <div class="col l-4 m-6 s-12">
+                        <div class="course-item2">
+
+                            <h1>JS</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
